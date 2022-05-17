@@ -1,6 +1,6 @@
 import React from 'react';
 import {getMergeSortAnimations} from './sortingAlgs.js';
-import styles from '../../styles/utils.module.css'
+import styles from '../styles/utils.module.css'
 
 // Change this value for the speed of the animations.
 const ANIMATION_SPEED_MS = 1;
@@ -103,7 +103,7 @@ export default class SortingVisualizer extends React.Component {
         ))}
         <br></br>
         <br></br>
-        <button onClick={() => this.resetArray()}>Generate New Array</button>
+        <button onClick={() => this.resetArray()}>Generate New Array</button> 
         <button onClick={() => this.mergeSort()}>Merge Sort</button>
         <button onClick={() => this.quickSort()}>Quick Sort</button>
         <button onClick={() => this.heapSort()}>Heap Sort</button>
