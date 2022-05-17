@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
 
 export default function Home() {
@@ -47,13 +46,14 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-          
-          <Link href="/sorting">
-            <a className="card">
-              <h3>Sorting &rarr;</h3>
-              <p>Test Sorting Link.</p>
-            </a>
-          </Link>
+
+          <a
+            href="/sort-viz/sorting"
+            className="card"
+          >
+            <h3>Sorting &rarr;</h3>
+            <p>Test Sorting Link.</p>
+          </a>
 
         </div>
       </main>
