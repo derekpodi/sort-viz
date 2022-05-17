@@ -45,6 +45,14 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
+          <a
+            href="/sorting"
+            className="card"
+          >
+            <h3>Sorting &rarr;</h3>
+            <p>Test Sorting Link.</p>
+          </a>
+
         </div>
       </main>
 
