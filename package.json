@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "export": "next export",
-    "lint": "next lint",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
