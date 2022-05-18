@@ -5,8 +5,7 @@
     "export": "next export",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "deploy": "gh-pages -d out -t true"
+    "start": "next start"
   },
   "dependencies": {
     "next": "latest",
