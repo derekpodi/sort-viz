@@ -55,6 +55,14 @@ export default function Home() {
             <p>Test Sorting Link.</p>
           </a>
 
+          <a
+            href="/sort-viz/sorting"
+            className="card"
+          >
+            <h3>Sorting &rarr;</h3>
+            <p>Test Sorting Link.</p>
+          </a>
+
         </div>
       </main>
 
