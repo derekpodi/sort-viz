@@ -48,7 +48,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/sort-viz/sorting"
+            href="/sorting"
             className="card"
           >
             <h3>Sorting &rarr;</h3>
