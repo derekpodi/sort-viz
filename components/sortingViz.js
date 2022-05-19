@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from "react-dom"
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
 
 import {getMergeSortAnimations} from './sortingAlgs.js';
-import styles from '../styles/utils.module.css'
+import styles from '../styles/utils.module.css';
 
 // Change this value for the speed of the animations.
 const ANIMATION_SPEED_MS = 1;
@@ -16,7 +16,7 @@ const PRIMARY_COLOR = '#87CEEB';
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
 
-export default class SortingVisualizer extends React.Component {
+export default class SortingVisualizer extends Component {
   constructor(props) {
     super(props);
 
