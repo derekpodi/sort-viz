@@ -93,10 +93,10 @@ export default class SortingVisualizer extends Component {
     const {array} = this.state;
 
     return (
-      <div className={[styles.center]}>
+      <div className="center">
         {array.map((value, idx) => (
           <div
-            className={styles.arrayBar}
+            className="arrayBar"
             key={idx}
             style={{
               backgroundColor: PRIMARY_COLOR,
@@ -113,6 +113,26 @@ export default class SortingVisualizer extends Component {
         <button onClick={() => this.testSortingAlgorithms()}>
           Test Sorting Algorithms (BROKEN)
         </button>
+        <style jsx>{`
+        .arrayContainer {
+          position: absolute;
+          left: 50%;
+          top: 5%;
+          /* top: 100px; */
+        }
+        
+        .arrayBar {
+          width: 2px;
+          display: inline-block;
+          margin: 0 1px;
+        }
+        
+        .center {
+          text-align: center;
+          border: 3px solid green;
+        }
+      `}</style>
+      
       </div>
     );
   }
