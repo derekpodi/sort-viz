@@ -1,5 +1,5 @@
 {
-  "homepage": "derekpodi.github.io/sort-viz",
+  "homepage": "https://derekpodi.github.io/sort-viz/",
   "private": true,
   "scripts": {
     "export": "next export",
