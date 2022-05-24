@@ -1,7 +1,9 @@
 {
-  "homepage": "https://derekpodi.github.io/sort-viz/",
+  "homepage": "https://derekpodi.github.io/sort-viz",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "export": "next export",
     "dev": "next dev",
     "build": "next build",
