@@ -105,12 +105,12 @@ export default class SortingVisualizer extends Component {
         ))}
         <br></br>
         <br></br>
-        <button onClick={() => this.resetArray()}>Generate New Array</button> 
-        <button onClick={() => this.mergeSort()}>Merge Sort</button>
-        <button onClick={() => this.quickSort()}>Quick Sort</button>
-        <button onClick={() => this.heapSort()}>Heap Sort</button>
-        <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
-        <button onClick={() => this.testSortingAlgorithms()}>
+        <button className="myBtn" onClick={() => this.resetArray()}>Generate New Array</button> 
+        <button className="myBtn" onClick={() => this.mergeSort()}>Merge Sort</button>
+        <button className="myBtn" onClick={() => this.quickSort()}>Quick Sort</button>
+        <button className="myBtn" onClick={() => this.heapSort()}>Heap Sort</button>
+        <button className="myBtn" onClick={() => this.bubbleSort()}>Bubble Sort</button>
+        <button className="myBtn" onClick={() => this.testSortingAlgorithms()}>
           Test Sorting Algorithms (BROKEN)
         </button>
         <style jsx>{`
@@ -130,6 +130,10 @@ export default class SortingVisualizer extends Component {
         .center {
           text-align: center;
           border: 3px solid green;
+        }
+
+        .myBtn {
+          margin-left: 10px;
         }
       `}</style>
       
