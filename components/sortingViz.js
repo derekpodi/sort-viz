@@ -101,7 +101,8 @@ export default class SortingVisualizer extends Component {
             style={{
               backgroundColor: PRIMARY_COLOR,
               height: `${value}px`,
-            }}></div>
+            }}>  
+          </div>
         ))}
         <br></br>
         <br></br>
@@ -113,6 +114,7 @@ export default class SortingVisualizer extends Component {
         <button className="myBtn" onClick={() => this.testSortingAlgorithms()}>
           Test Sorting Algorithms (BROKEN)
         </button>
+        
         <style jsx>{`
         .arrayContainer {
           position: absolute;
@@ -130,6 +132,7 @@ export default class SortingVisualizer extends Component {
         .center {
           text-align: center;
           border: 3px solid green;
+          padding-top: 20px;
         }
 
         .myBtn {
