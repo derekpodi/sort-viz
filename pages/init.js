@@ -48,20 +48,22 @@ export default function Home() {
           </a>
 
           <a
-            href="/sorting"
+            href="/init"
             className="card"
           >
-            <h3>Sorting &rarr;</h3>
-            <p>Test Sorting Link.</p>
+            <h3>Init &rarr;</h3>
+            <p>Test Init Link.</p>
           </a>
 
           <a
-            href="/sort-viz/sorting"
+            href="/"
             className="card"
           >
-            <h3>Sorting &rarr;</h3>
-            <p>Test Sorting Link.</p>
+            <h3>Vizualization &rarr;</h3>
+            <p>Test Init Link.</p>
           </a>
+
+          
 
         </div>
       </main>

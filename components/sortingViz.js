@@ -3,6 +3,8 @@ import ReactDOM from "react-dom";
 
 import {getMergeSortAnimations} from './sortingAlgs.js';
 import styles from '../styles/utils.module.css';
+import { useRouter } from 'next/router'
+
 
 // Change this value for the speed of the animations.
 const ANIMATION_SPEED_MS = 2;
@@ -15,6 +17,22 @@ const PRIMARY_COLOR = '#87CEEB';
 
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
+
+function Init() {
+  const router = useRouter()
+
+
+  const handleClick = e => {
+    e.preventDefault()
+    router.push('/init')
+  }
+
+  return (
+    <button style={{ margin: '10px'}} onClick={handleClick}>
+      Init
+    </button>
+  )
+}
 
 export default class SortingVisualizer extends Component {
   constructor(props) {
@@ -88,7 +106,7 @@ export default class SortingVisualizer extends Component {
       console.log(arraysAreEqual(javaScriptSortedArray, mergeSortedArray));
     }
   }
-
+  
   render() {
     const {array} = this.state;
 
@@ -114,7 +132,8 @@ export default class SortingVisualizer extends Component {
         <button className="myBtn" onClick={() => this.testSortingAlgorithms()}>
           Test Sorting Algorithms (BROKEN)
         </button>
-        
+        <Init />
+
         <style jsx>{`
         .arrayContainer {
           position: absolute;
