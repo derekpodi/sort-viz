@@ -48,7 +48,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/init"
+            href="/sort-viz/init"
             className="card"
           >
             <h3>Init &rarr;</h3>
@@ -56,7 +56,7 @@ export default function Home() {
           </a>
 
           <a
-            href="/"
+            href="/sort-viz"
             className="card"
           >
             <h3>Vizualization &rarr;</h3>

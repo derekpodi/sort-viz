@@ -24,7 +24,7 @@ function Init() {
 
   const handleClick = e => {
     e.preventDefault()
-    router.push('/init')
+    router.push('/sort-viz/init')
   }
 
   return (
