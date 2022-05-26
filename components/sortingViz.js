@@ -18,23 +18,6 @@ const PRIMARY_COLOR = '#87CEEB';
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
 
-function Init() {
-  const router = useRouter()
-
-
-  const handleClick = e => {
-    e.preventDefault()
-    router.push({pathname:'/sort-viz/init'})
-  }
-
-  return (
-    <button style={{ margin: '10px'}} onClick={handleClick}>
-      Init
-    </button>
-    
-  )
-}
-
 export default class SortingVisualizer extends Component {
   constructor(props) {
     super(props);
@@ -133,7 +116,12 @@ export default class SortingVisualizer extends Component {
         <button className="myBtn" onClick={() => this.testSortingAlgorithms()}>
           Test Sorting Algorithms (BROKEN)
         </button>
-        <Init />
+
+        <button className="myBtn">
+          <a href="/sort-viz/init">
+              <p>Init</p>
+          </a>
+        </button>
 
         <style jsx>{`
         .arrayContainer {
