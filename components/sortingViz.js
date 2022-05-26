@@ -24,13 +24,14 @@ function Init() {
 
   const handleClick = e => {
     e.preventDefault()
-    router.push('/sort-viz/init')
+    router.push({pathname:'/sort-viz/init'})
   }
 
   return (
     <button style={{ margin: '10px'}} onClick={handleClick}>
       Init
     </button>
+    
   )
 }
 
