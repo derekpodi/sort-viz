@@ -7,7 +7,7 @@ import { useRouter } from 'next/router'
 
 
 // Change this value for the speed of the animations.
-const ANIMATION_SPEED_MS = 2;
+const ANIMATION_SPEED_MS = 1.5;
 
 // Change this value for the number of bars (value) in the array.
 const NUMBER_OF_ARRAY_BARS = 200;
@@ -96,7 +96,7 @@ export default class SortingVisualizer extends React.Component {
 
     return (
       <div className="center">
-        {array.map((value, idx) => (
+        {this.state.array.map((value, idx) => (
           <div
             className="arrayBar"
             key={idx}
