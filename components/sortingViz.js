@@ -18,6 +18,7 @@ const PRIMARY_COLOR = '#87CEEB';
 // This is the color of array bars that are being compared throughout the animations.
 const SECONDARY_COLOR = 'red';
 
+
 export default class SortingVisualizer extends React.Component {
   constructor(props) {
     super(props);
@@ -92,6 +93,7 @@ export default class SortingVisualizer extends React.Component {
   }
   
   render() {
+
     const {array} = this.state;
 
     return (
