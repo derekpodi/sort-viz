@@ -118,9 +118,7 @@ export default class SortingVisualizer extends Component {
         </button>
 
         <button className="myBtn">
-          <a href="/sort-viz/init">
-              <p>Init</p>
-          </a>
+          <a href="/sort-viz/init">Init</a>
         </button>
 
         <style jsx>{`
