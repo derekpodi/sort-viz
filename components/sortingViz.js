@@ -121,7 +121,7 @@ export default class SortingVisualizer extends React.Component {
         </button>
 
         <button className="myBtn">
-          <a href="/sort-viz/init">Init</a>
+          <a href="/sort-viz/init">Next Init</a>
         </button>
 
         <style jsx>{`
