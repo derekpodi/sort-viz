@@ -1,13 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import {getMergeSortAnimations} from './sortingAlgs.js';
-import styles from '../styles/utils.module.css';
-import { useRouter } from 'next/router'
 
 
 // Change this value for the speed of the animations.
-const ANIMATION_SPEED_MS = 1.5;
+const ANIMATION_SPEED_MS = 1;
 
 // Change this value for the number of bars (value) in the array.
 const NUMBER_OF_ARRAY_BARS = 200;
@@ -108,7 +105,11 @@ export default class SortingVisualizer extends React.Component {
             }}>  
           </div>
         ))}
-        
+        <div className="arrayBar" style={{
+              backgroundColor: PRIMARY_COLOR,
+              height: `125px`,
+            }} >
+        </div>
         <br></br>
         <br></br>
         <button className="myBtn" onClick={() => this.resetArray()}>Generate New Array</button> 
