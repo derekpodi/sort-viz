@@ -10,3 +10,8 @@ Issues with non-static portions of nextjs within gh-pages - not loading interact
 
 Track possible fixes [here](https://github.com/vercel/next.js/issues/3335).
 
+Problem currently lies with: line 98 -> this.state.array.map((value, idx) =>.
+
+Works locally, but can't port to Github Pages correctly.
+
+
