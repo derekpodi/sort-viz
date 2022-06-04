@@ -105,11 +105,18 @@ export default class SortingVisualizer extends React.Component {
             }}>  
           </div>
         ))}
-        <div className="arrayBar" style={{
+
+        <div className="arrayBar" key='2' style={{
               backgroundColor: PRIMARY_COLOR,
               height: `125px`,
             }} >
         </div>
+        <div className="arrayBar" key='1' style={{
+              backgroundColor: PRIMARY_COLOR,
+              height: `100px`,
+            }} >
+        </div>
+        
         <br></br>
         <br></br>
         <button className="myBtn" onClick={() => this.resetArray()}>Generate New Array</button> 
