@@ -95,7 +95,7 @@ export default class SortingVisualizer extends React.Component {
 
     return (
       <div className="center">
-        {this.state.array.map((value, idx) => (
+        {array.map((value, idx) => (
           <div
             className="arrayBar"
             key={idx}
